@@ -6,7 +6,12 @@ const Login = () => {
     <div className=" d-flex align-items-center justify-content-center  h ">
       <div className="container border d-flex align-items-center justify-content-center h-75 border border-secondary">
         <div className="row h-75 ">
+           
           <form>
+            <div className="mb-5 flex-col  align-items-center justify-content-center text-center">
+            <h2 className="text">Sign in</h2>
+            <small>Please enter your login information</small>
+            </div>
             <div class="form-group">
               <label for="exampleInputEmail1" className="mb-5">Email address</label>
               <input
@@ -28,7 +33,7 @@ const Login = () => {
               />
             </div>
             <small id="emailHelp" class=" form-text text-muted mb-5">
-              <u>Forgot password</u>
+              <u>Forgot password ?</u>
               </small>
             <div class="form-check">
               

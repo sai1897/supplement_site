@@ -2,6 +2,8 @@
   height: 100vh;
 }
 
+
+
 .border{
   border-radius: 10px;
 }
@@ -12,4 +14,8 @@
 
 .text{
 font-weight: bold;
+}
+
+.text_input{
+ background-color:#D1FFF1
 }

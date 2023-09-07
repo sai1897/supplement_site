@@ -1,10 +1,13 @@
 import React from "react";
 import "../App.css";
+import { useId } from 'react';
 
 const Login = () => {
+    const demoid = useId();
+
   return (
-    <div className=" d-flex align-items-center justify-content-center  h "style={{backgroundColor:"#9CEFC0"}} >
-      <div className=" container border d-flex align-items-center justify-content-center  h-75 border border-secondary" style={{backgroundColor:"whitesmoke"}} >
+    <div className=" d-flex align-items-center justify-content-center -my-5 h "style={{backgroundColor:"#9CEFC0",padding:"2rem 5rem"}} >
+      <div className=" container border d-flex align-items-center justify-content-center  h-100 border border-secondary" style={{backgroundColor:"whitesmoke"}} >
         <div className="row-sm-12 h-75">
             <div className="d-flex justify-content-center">
             <img style={{height:60,width:140}} src="./download.png"></img>
@@ -42,7 +45,7 @@ const Login = () => {
               
             </div>
             <div className="d-flex  align-items-center justify-content-center mb-3">
-            <button type="submit"  className="btn  w-100 border" style={{backgroundColor:"black",color:"white",fontWeight:"bold"}}>
+            <button type="submit"  className="btn  w-100  border" style={{backgroundColor:"black",color:"white",fontWeight:"bold"}}>
                 LOGIN
             </button>
             </div>

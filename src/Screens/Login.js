@@ -1,12 +1,23 @@
 import React from "react";
 import "../App.css";
-import { useId } from 'react';
+import useBearStore from "../Store/Store.js";
+
 
 const Login = () => {
-    const demoid = useId();
+  const   st = useBearStore()
+  // function BearCounter() {
+  //   const bears = useBearStore((state) => state.bears)
+  //   return <h1>{bears} </h1>
+  // }
+
+
+
 
   return (
     <div className=" d-flex align-items-center justify-content-center -my-5 h "style={{backgroundColor:"#9CEFC0",padding:"2rem 5rem"}} >
+     
+          
+
       <div className=" container border d-flex align-items-center justify-content-center  h-100 border border-secondary" style={{backgroundColor:"whitesmoke"}} >
         <div className="row-sm-12 h-75">
             <div className="d-flex justify-content-center">
@@ -14,7 +25,27 @@ const Login = () => {
             </div>
           <form>
             <div className="mb-5 flex-col  align-items-center justify-content-center text-center">
-            <h2 className="text">Sign in</h2>
+            <h2 className="text">
+            <div onClick={()=>{
+      st.setVal("Register")
+    }}>
+    {/* <BearCounter/> */}
+    {st.bears}
+
+    </div>
+
+
+    <div onClick={()=>{
+      st.setData("updating it")
+    }}>
+    {/* <BearCounter/> */}
+    {st.data}
+
+    </div>
+
+
+
+              </h2>
             <small>Please enter your login information</small>
             </div>
             <div className="form-group">

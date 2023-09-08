@@ -14,38 +14,38 @@ const Login = () => {
 
 
   return (
-    <div className=" d-flex align-items-center justify-content-center -my-5 h "style={{backgroundColor:"#9CEFC0",padding:"2rem 5rem"}} >
+    <div className=" d-flex align-items-center justify-content-center  h "style={{padding:"2rem 10rem"}} >
      
           
 
-      <div className=" container border d-flex align-items-center justify-content-center  h-100 border border-secondary" style={{backgroundColor:"whitesmoke"}} >
-        <div className="row-sm-12 h-75">
+      <div className=" container  border d-flex align-items-center justify-content-center  h-100 border border-secondary" style={{backgroundColor:"whitesmoke"}} >
+        <div className="row-sm-12 h-75 ">
             <div className="d-flex justify-content-center">
-            <img style={{height:60,width:140}} src="./download.png"></img>
+            <img style={{height:180,width:172}} src="./logo.png"></img>
             </div>
           <form>
             <div className="mb-5 flex-col  align-items-center justify-content-center text-center">
-            <h2 className="text">
-            <div onClick={()=>{
-      st.setVal("Register")
-    }}>
+            {/* <h2 className="text"> */}
+            {/* <div onClick={()=>{ */}
+      {/* st.setVal("Register") */}
+    {/* }}> */}
     {/* <BearCounter/> */}
-    {st.bears}
+    {/* {st.bears} */}
 
-    </div>
+    {/* </div> */}
 
 
-    <div onClick={()=>{
-      st.setData("updating it")
-    }}>
+    {/* <div onClick={()=>{ */}
+      {/* st.setData("updating it") */}
+    {/* }}> */}
     {/* <BearCounter/> */}
-    {st.data}
+    {/* {st.data} */}
 
-    </div>
+    {/* </div> */}
 
 
 
-              </h2>
+              {/* </h2> */}
             <small>Please enter your login information</small>
             </div>
             <div className="form-group">
@@ -79,14 +79,16 @@ const Login = () => {
             <button type="submit"  className="btn  w-100  border" style={{backgroundColor:"black",color:"white",fontWeight:"bold"}}>
                 LOGIN
             </button>
+        
             </div>
             <div className="d-flex justify-content-center">
 
-            <small><h7>Don't have an account? </h7>
-            <a href="url">
-                <u> Sign Up</u> </a>
-                </small>
-            </div>
+<small><h7>Don't have an account? </h7>
+<a href="url">
+    <u> Sign Up</u> </a>
+    </small>
+</div>
+      
           </form>
         </div>
       </div>

@@ -7,6 +7,7 @@ import Verify from './Screens/Verify';
 import Passf from './Screens/Passf';
 import Confirm from './Screens/Confirm';
 import Payment from './Screens/Payment';
+import Navbar from './Screens/Navbar';
 
 
 function App() {
@@ -20,6 +21,8 @@ function App() {
       <Route path="pass" element={<Passf />} />
       <Route path="confirm" element={<Confirm />} />
       <Route path="payment" element={<Payment />} />
+      <Route path="nav" element={<Navbar />} />
+
 
 
 

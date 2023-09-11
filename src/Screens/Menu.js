@@ -1,9 +1,11 @@
 import React from "react";
-
+import "../App.css"
 const Menu=()=> {
   return (
-    <div className="h" style={{width:270}}>
-          <div className="h-100">
+    <div>
+    <div className="h2 mt-3 " style={{width:270}}>
+
+          <div className="h-75">
         <div >
         
         <div class="dropdown show d-flex flex-row p-5 border m-1" >
@@ -93,6 +95,7 @@ Refunds
 </div>
         </div>
       </div>
+    </div>
     </div>
   );
 }

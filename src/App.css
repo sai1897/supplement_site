@@ -2,8 +2,12 @@
   height: 100vh;
   
 }
-
-
+.h2{
+  height: 80vh;
+}
+.h3{
+  height: 10vh;
+}
 .border{
   border-radius: 10px;
 }

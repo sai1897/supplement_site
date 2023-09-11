@@ -10,6 +10,15 @@ import Payment from './Screens/Payment';
 import Navbar from './Screens/Navbar';
 
 
+
+import Customers from "./Dashboard/Customers";
+import Dash  from "./Dashboard/Dash";
+import Orders from "./Dashboard/Dash";
+import Refund from "./Dashboard/Refund";
+import Reports from "./Dashboard/Reports";
+import Umangement  from "./Dashboard/Umanagement"
+
+
 function App() {
   return (
     <div className="App">
@@ -22,6 +31,17 @@ function App() {
       <Route path="confirm" element={<Confirm />} />
       <Route path="payment" element={<Payment />} />
       <Route path="nav" element={<Navbar />} />
+      <Route path="menu" element={<Menu />} />
+
+
+
+      <Route path="customers" element={<Customers />} />
+      <Route path="dashboard" element={<Dash />} />
+      <Route path="orders" element={<Orders />} />
+      <Route path="refunds" element={<Refund />} />
+      <Route path="reports" element={<Reports />} />
+      <Route path="user" element={<Umangement />} />
+
 
 
 

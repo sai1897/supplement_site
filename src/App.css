@@ -39,12 +39,10 @@ box-shadow: 0px 4px 4px 0px #0FA958;
 }
 
 
-/* .font{
-  font-family: 'Inter', sans-serif;
-  font-family: 'Open Sans', sans-serif;
-  font-family: 'Preahvihear', sans-serif;
-} */
+.font{
+font-family: 'Montserrat', sans-serif;
 
+}
 
 .w{
   width: 100;
@@ -54,5 +52,15 @@ box-shadow: 0px 4px 4px 0px #0FA958;
 .shadow{
   
   filter: drop_shadow(16px 16px 10px black)
+
+}
+
+.border1{
+  border: 6px solid #1C943E ;
+  border-radius: 20px;
+}
+
+.inter{
+  font-family: 'Inter', sans-serif;
 
 }

@@ -6,7 +6,7 @@ export default function Customers() {
   return (
 <div className="h">
     <Navbar/>
-    <div className="row h-100">
+    <div className="row h-100 mt-4">
       <div className=" d-flex col-sm-2" >
       <Menu/>
 

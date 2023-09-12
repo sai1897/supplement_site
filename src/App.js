@@ -32,6 +32,8 @@ function App() {
       <Route path="payment" element={<Payment />} />
       <Route path="nav" element={<Navbar />} />
       <Route path="menu" element={<Menu />} />
+      <Route path="passf" element={<Passf />} />
+
 
 
 

@@ -14,16 +14,16 @@ const Login = () => {
 
 
   return (
-    <div className=" d-flex align-items-center justify-content-center  h "style={{padding:"2rem 10rem"}} >
+    <div className=" d-flex align-items-center justify-content-center  h  "  >
      
           
 
-      <div className=" container  border d-flex align-items-center justify-content-center  h-100 border border-secondary" style={{backgroundColor:"whitesmoke"}} >
-        <div className="row-sm-12 h-75 ">
-            <div className="d-flex justify-content-center">
+      <div className=" container h-100  d-flex align-items-center justify-content-center  h-100 " style={{backgroundColor:"whitesmoke"}} >
+        <div className="row-sm-12    " style={{height:896,borderStyle:"solid",borderWidth:3,borderRadius:20,padding:"1rem 4rem"}}>
+            <div className="d-flex justify-content-center ">
             <img style={{height:180,width:172}} src="./logo.png"></img>
             </div>
-          <form>
+          <form >
             <div className="mb-5 flex-col  align-items-center justify-content-center text-center">
             {/* <h2 className="text"> */}
             {/* <div onClick={()=>{ */}
@@ -48,8 +48,8 @@ const Login = () => {
               {/* </h2> */}
             <small>Please enter your login information</small>
             </div>
-            <div className="form-group">
-              <label for="exampleInputEmail1" className="mb-5">Username</label>
+            <div className="form-group ">
+              <label for="exampleInputEmail1" className="mb-3">Username</label>
               <input
                 type="email"
                 className="form-control mb-5 text_input border"
@@ -60,7 +60,7 @@ const Login = () => {
               
             </div>
             <div className="form-group">
-              <label for="exampleInputPassword1">Password</label>
+              <label for="exampleInputPassword1 mb-3">Password</label>
               <input
                 type="password"
                 className="form-control mb-5  text_input border"
@@ -68,26 +68,27 @@ const Login = () => {
                 placeholder="Password"
               />
             </div>
-            <small id="emailHelp" className=" form-text text-muted mb-5">
+            <small id="emailHelp" className=" form-text text-muted mb-3">
               <u>Forgot password ?</u>
               </small>
-            <div className="form-check">
-              
-              
-            </div>
-            <div className="d-flex  align-items-center justify-content-center mb-3">
+              <div className="d-flex  align-items-center justify-content-center mb-3">
             <button type="submit"  className="btn  w-100  border" style={{backgroundColor:"black",color:"white",fontWeight:"bold"}}>
                 LOGIN
             </button>
         
             </div>
-            <div className="d-flex justify-content-center">
+            <div className="form-check">
+              
+              
+            </div>
+        
+            {/* <div className="d-flex justify-content-center"> */}
 
-<small><h7>Don't have an account? </h7>
+{/* <small><h7>Don't have an account? </h7>
 <a href="url">
     <u> Sign Up</u> </a>
-    </small>
-</div>
+    </small> */}
+{/* </div> */}
       
           </form>
         </div>

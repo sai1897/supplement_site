@@ -2,30 +2,27 @@ import React from "react";
 import "../App.css"
 const Menu=()=> {
   return (
-    <div>
-    <div className="h2 mt-3 " style={{width:270}}>
+    <div className="menu"> 
+    <div className="h2 mt-3" style={{width:389}}>
 
           <div className="h-75">
-        <div >
-        
-        <div class="dropdown show d-flex flex-row p-5 border m-1" >
-  <img src="./Dashboard/ic_sharp-dashboard.png"/>
-  <a style={{width:250}}class="btn " href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-Dashboard  </a>
+          <div  style={{marginTop:10}}>
+        <div class="dropdown show d-flex flex-row p-5  m-1">
+        <img src="./Dashboard/ic_sharp-dashboard.png"/>
 
-  {/* <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-    <a class="dropdown-item" href="#">Action</a>
-    <a class="dropdown-item" href="#">Another action</a>
-    <a class="dropdown-item" href="#">Something else here</a>
-  </div> */}
+  <a    class="btn" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+Dashboard          <img src="./Dashboard/drop.png"/>
+</a>
+
+
 </div>
         </div>
         <div  style={{marginTop:10}}>
-        <div class="dropdown show d-flex flex-row p-5 border m-1">
+        <div class="dropdown show d-flex flex-row p-5  m-1">
         <img src="./Dashboard/Group.png"/>
 
-  <a   style={{width:250}} class="btn  dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-Customers  </a>
+  <a   style={{width:250}} class="btn  " href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+Customers   <img src="./Dashboard/drop.png"/> </a>
 
   <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
     <a class="dropdown-item" href="/customers">Customer List</a>
@@ -34,11 +31,11 @@ Customers  </a>
 </div>
         </div>
         <div  style={{marginTop:10}}> 
-        <div class="dropdown show d-flex flex-row p-5 border m-1">
+        <div class="dropdown show d-flex flex-row p-5  m-1">
         <img src="./Dashboard/eos-icons_cluster-management.png"/>
 
-  <a  style={{width:250}} class="btn  dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-User Management
+  <a  style={{width:250}} class="btn " href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+User Management <img src="./Dashboard/drop.png"/>
   </a>
 
   <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
@@ -49,10 +46,10 @@ User Management
 </div>
         </div>
         <div  style={{marginTop:10}}>
-        <div class="dropdown show d-flex flex-row p-5 border m-1">
+        <div class="dropdown show d-flex flex-row p-5  m-1">
           <img src="./Dashboard/Vector(9).png"/>
-  <a   style={{width:250}} class="btn dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-Orders
+  <a   style={{width:250}} class="btn " href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+Orders <img src="./Dashboard/drop.png"/>
   </a>
 
   <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
@@ -63,11 +60,11 @@ Orders
 </div>
         </div>
         <div  style={{marginTop:10}}>
-        <div class="dropdown show d-flex flex-row p-5 border m-1 ">
+        <div class="dropdown show d-flex flex-row p-5  m-1 ">
           <img src="./Dashboard/iconoir_reports.png"/>
-  <a   style={{width:250}}class="btn dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+  <a   style={{width:250}}class="btn" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 
-Reports  </a>
+Reports <img src="./Dashboard/drop.png"/> </a>
 
   <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
     <a class="dropdown-item" href="#">Sales Report </a>
@@ -80,12 +77,12 @@ Reports  </a>
 </div>
         </div>
         <div  style={{marginTop:10}}>
-        <div class="dropdown show d-flex flex-row p-5 border m-1 ">
+        <div class="dropdown show d-flex flex-row p-5  m-1 ">
           <img   src="./Dashboard/gridicons_refund.png"/>
-  <h1  style={{width:250}} class="btn  dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+  <a  style={{width:250}} class="btn  " href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 
-Refunds
-  </h1>
+Refunds <img src="./Dashboard/drop.png"/>
+  </a>
 
   <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
     <a class="dropdown-item" href="#">Refund Tracking</a>

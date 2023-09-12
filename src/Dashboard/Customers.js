@@ -6,13 +6,13 @@ export default function Customers() {
   return (
 <div className="h">
     <Navbar/>
-    <div className="row">
-      <div className="col">
+    <div className="row h-100">
+      <div className=" d-flex col-sm-2" >
       <Menu/>
 
 
       </div>
-      <div className="col bg-info">
+      <div className="col-sm-10 bg-info">
 <div className="row">
   <div className="col">
 

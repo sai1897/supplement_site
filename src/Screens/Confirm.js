@@ -1,27 +1,27 @@
 import React from "react";
-
+import "../App.css"
 export default function () {
   return (
     <div>
       <div>
         <div
-          className="h  d-flex align-items-center justify-content-center "
-          style={{ backgroundColor: "#A4E4B6" }}
+          className="h w d-flex align-items-center justify-content-center  "
+          style={{ backgroundColor: "#A4E4B6"}}
         >
           <div
-            className="container w-75 h-75 "
-            style={{ backgroundColor: "#FFFFFF" }}
+            className="  container-fluid mx-4 shadow"
+            style={{ backgroundColor: "#FFFFFF",height:500,borderStyle:"solid",borderWidth:2}}
           >
             <div className="d-flex justify-content-center m-4">
               <img style={{ height: 100, width: 100 }} src="./forgot.png"></img>
             </div>
-            <div className="row">
-              <div className=" d-flex col justify-content-center">
+            <div className="row m-4">
+              <div className=" d-flex col justify-content-center" style={{fontWeight:700}}>
                 <h1>Confirm Password</h1>
               </div>
             </div>
             <div className="row d-flex justify-content-center m-4">
-              <div className="d-flex col-sm-3 justify-content-center">
+              <div className="d-flex col-sm-3 justify-content-center ">
               New Password:
               </div>
               <div className=" d-flex col-sm-3 justify-content-center">
@@ -41,10 +41,10 @@ export default function () {
 
               </div>
             </div>
-            <div className="row d-flex justify-content-center m-4">
+            <div className="row d-flex justify-content-center m-4 ">
               <button
                 type="button "
-                class="btn "
+                className="btn shadow"
                 style={{
                   width: 200,
                   backgroundColor: "#1CE45F",

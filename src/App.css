@@ -64,3 +64,6 @@ font-family: 'Montserrat', sans-serif;
   font-family: 'Inter', sans-serif;
 
 }
+.grad {
+  background-image: linear-gradient(#6EC57C, #D7FFA4);
+}

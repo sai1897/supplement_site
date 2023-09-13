@@ -14,8 +14,8 @@ const Login = () => {
 
 
   return (
-    <div className=" d-flex align-items-center justify-content-center  h  " style={{backgroundColor:"#6ec57c"}}  >
-     <div className=" p-4 border1 d-flex align-items-center justify-content-center" style={{height:720,width:602,backgroundColor:"#FFFFFF"}}>
+    <div className=" d-flex grad align-items-center justify-content-center  h  " style={{backgroundColor:"#6ec57c"}}  >
+     <div className=" p-4   border1 d-flex align-items-center justify-content-center" style={{height:720,width:602,backgroundColor:"#FFFFFF"}}>
 
 
      <form>
@@ -24,7 +24,7 @@ const Login = () => {
   <div class="form-group" style={{marginBottom:33}}>
     <label for="exampleInputEmail1 " className="font">Username</label>
     <input style={{height:50,width:460,borderRadius:10,backgroundColor:"#D9D9D9"}} type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email"/>
-    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+    {/* <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> */}
   </div>
   <div class="form-group " style={{marginBottom:33}}>
     <label for="exampleInputPassword1"  className="font">Password</label>

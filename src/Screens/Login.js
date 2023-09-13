@@ -14,7 +14,7 @@ const Login = () => {
 
 
   return (
-    <div className=" d-flex align-items-center justify-content-center  h  "  >
+    <div className=" d-flex align-items-center justify-content-center  h  " style={{backgroundColor:"#6ec57c"}}  >
      <div className=" p-4 border1 d-flex align-items-center justify-content-center" style={{height:720,width:602,backgroundColor:"#FFFFFF"}}>
 
 

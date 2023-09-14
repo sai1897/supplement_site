@@ -9,18 +9,18 @@ export default function () {
           style={{ backgroundColor: "#A4E4B6"}}
         >
           <div
-            className="  container-fluid mx-4 shadow"
-            style={{ backgroundColor: "#FFFFFF",height:500,borderStyle:"solid",borderWidth:2}}
+            className="  container-fluid mx-4 shadow w-50"
+            style={{ backgroundColor: "#FFFFFF",height:650,borderStyle:"solid",borderWidth:2,width:1200}}
           >
             <div className="d-flex justify-content-center m-4">
-              <img style={{ height: 100, width: 100 }} src="./forgot.png"></img>
+              <img style={{ height: 100, width: 100 ,marginTop:50}} src="./forgot.png"></img>
             </div>
-            <div className="row m-4">
+            <div className="row m-4" style={{marginTop:50}}>
               <div className=" d-flex col justify-content-center" style={{fontWeight:700}}>
                 <h1>Confirm Password</h1>
               </div>
             </div>
-            <div className="row d-flex justify-content-center m-4">
+            <div className="row d-flex justify-content-center "style={{marginTop:40}}>
               <div className="d-flex col-sm-3 justify-content-center ">
               New Password:
               </div>
@@ -30,7 +30,7 @@ export default function () {
   </div>
               </div>
             </div>
-            <div className="row d-flex justify-content-center m-4">
+            <div className="row d-flex justify-content-center ">
               <div className="d-flex col-sm-3 justify-content-center">
               Confirm Password:
               </div>

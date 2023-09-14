@@ -11,9 +11,9 @@ import Navbar from './Screens/Navbar';
 
 
 
-import Customers from "./Dashboard/Customers";
+import Customers from "./Dashboard/Customers/Customers";
 import Dash  from "./Dashboard/Dash";
-import Orders from "./Dashboard/Dash";
+import Orders from "./Dashboard/Orders/Orders";
 import Refund from "./Dashboard/Refund";
 import Reports from "./Dashboard/Reports";
 import Umangement  from "./Dashboard/Umanagement"
@@ -32,7 +32,7 @@ function App() {
       <Route path="payment" element={<Payment />} />
       <Route path="nav" element={<Navbar />} />
       <Route path="menu" element={<Menu />} />
-      <Route path="passf" element={<Passf />} />
+      {/* <Route path="passf" element={<Passf />} /> */}
 
 
 

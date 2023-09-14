@@ -14,7 +14,8 @@ const Login = () => {
 
 
   return (
-    <div className=" d-flex grad align-items-center justify-content-center  h  " style={{backgroundColor:"#6ec57c"}}  >
+    <div className=" d-flex grad align-items-center justify-content-center  h  "  >
+      <div>
      <div className=" p-4   border1 d-flex align-items-center justify-content-center" style={{height:720,width:602,backgroundColor:"#FFFFFF"}}>
 
 
@@ -40,14 +41,14 @@ const Login = () => {
   </div>
   <div className="d-flex align-items-center justify-content-center " >
   <button className="d-flex align-items-center justify-content-center text-center" style={{ height:60 ,width:210 ,borderRadius:18,backgroundColor:"#6AE531"}} type="submit">
-    <div   className="font" style={{fontWeight:700,fontSize:36,color:"#FFFFFF"}}> Login</div>
+    <div   className="font" style={{fontWeight:500,fontSize:36,color:"#FFFFFF"}}> Login</div>
   </button>
   </div>
 </form>
      </div>
           
 
-     
+     </div>
       </div>
   );
 };

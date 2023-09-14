@@ -76,6 +76,8 @@ font-family: 'Montserrat';
 
 .table{
   box-shadow: 5px 5px  5px #888888;
+  margin-left: 3rem;
+  margin-right: 3rem;
 }
 th{
   background-color:#A1FF89;

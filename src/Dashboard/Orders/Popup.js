@@ -205,7 +205,7 @@ const Popup = () => {
         style={{ backgroundColor: "#0b3629", color: "white" }}
         onClick={() => setmodal(true)}
       >
-        Add users
+Edit/View
       </button>
     </div>
   );

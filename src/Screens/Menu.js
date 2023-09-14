@@ -14,9 +14,8 @@ const Menu = () => {
               <a
                 style={{ width: 250 }}
                 class="btn "
-                href="#"
+                href="/dashboard"
                 role="button"
-                id="dropdownMenuLink"
                 data-toggle="dropdown"
                 aria-haspopup="true"
                 aria-expanded="false"
@@ -40,17 +39,16 @@ const Menu = () => {
 
               <a
                 style={{ width: 250 }}
-                class="btn  dropdown-toggle"
-                href="#"
+                class="btn  "
+                href="/customers"
                 role="button"
-                id="dropdownMenuLink"
                 data-toggle="dropdown"
                 aria-haspopup="true"
                 aria-expanded="false"
               >
                 Customers{" "}
               </a>
-              <div
+              {/* <div
                 class="dropdown-menu"
                 aria-labelledby="dropdownMenuLink"
                 style={{ width: 200 }}
@@ -58,7 +56,7 @@ const Menu = () => {
                 <a class="dropdown-item" href="/customers">
                   Customer List
                 </a>
-              </div>
+              </div> */}
             </div>
           </div>
           <div style={{ marginTop: 10 }}>

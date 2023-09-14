@@ -1,5 +1,5 @@
 import logo from './logo.svg';
-import './App.css';
+import '/home/cogncise/React/suppliment/src/App.css';
 import Menu from './Screens/Menu';
 import { BrowserRouter, Routes, Route} from "react-router-dom";
 import Login from './Screens/Login';
@@ -13,8 +13,12 @@ import Navbar from './Screens/Navbar';
 
 import Customers from "./Dashboard/Customers/Customers";
 import Dash  from "./Dashboard/Dash";
-import Orders from "./Dashboard/Orders/Orders";
-import Refund from "./Dashboard/Refund";
+
+import Orders from "/home/cogncise/React/suppliment/src/Dashboard/Orders/Orders.js";
+import Refund from '/home/cogncise/React/suppliment/src/Dashboard/Orders/Refund.js';
+import Upcomingorders from '/home/cogncise/React/suppliment/src/Dashboard/Orders/Upcomingorders.js';
+
+
 import Reports from "./Dashboard/Reports";
 import Umangement  from "./Dashboard/Umanagement"
 
@@ -39,8 +43,13 @@ function App() {
 
       <Route path="customers" element={<Customers />} />
       <Route path="dashboard" element={<Dash />} />
+
+
       <Route path="orders" element={<Orders />} />
       <Route path="refunds" element={<Refund />} />
+      <Route path="upcoming" element={<Upcomingorders/>}/>
+
+
       <Route path="reports" element={<Reports />} />
       <Route path="user" element={<Umangement />} />
 

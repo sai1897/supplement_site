@@ -1,7 +1,14 @@
 import React from 'react'
+import Popup from './Popup'
 
 export default function Orders() {
   return (
-    <div>Orders</div>
+    <div>
+      <h1>
+        
+      </h1>
+      <Popup/>
+
+    </div>
   )
 }

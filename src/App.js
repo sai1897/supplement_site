@@ -9,6 +9,7 @@ import Confirm from './Screens/Confirm';
 import Payment from './Screens/Payment';
 import Navbar from './Screens/Navbar';
 
+import Quotes from './Dashboard/Orders/Quotes';
 
 
 import Customers from "./Dashboard/Customers/Customers";
@@ -52,6 +53,9 @@ function App() {
 
       <Route path="reports" element={<Reports />} />
       <Route path="user" element={<Umangement />} />
+
+      <Route path="quotes" element={<Quotes />} />
+
 
 
 

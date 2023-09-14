@@ -3,16 +3,13 @@ import Popup from './Popup'
 import Navbar from "/home/cogncise/React/suppliment/src/Screens/Navbar.js";
 import Menu from "/home/cogncise/React/suppliment/src/Screens/Menu.js";
 import "/home/cogncise/React/suppliment/src/App.css";
-export default function Orders() {
+import Quotespopup from './Quotespopup';
+export default function 
 
-  // const Popup=()=>{
-  //   return(
-  //     <Popup/>
-
-  //   )
-  // }
+() {
   return (
     <div>
+         <div>
       <div className="h container-fluid">
       <Navbar />
       <div className="row h-100 mt-4">
@@ -22,13 +19,13 @@ export default function Orders() {
 
         <div className="col-sm-10 ">
           <div className="row h-10 d-flex justify-content-start align-items-center " style={{color:"#0FA958",fontWeight:600,fontSize:64,fontFamily:"serif"}}>
-          All Orders
+          Quotes          
           
           </div>
 
           <div className="row  h-90 d-flex justify-content-center text-center align-items-center ">
           <div className="row  h-60 d-flex justify-content-start"  >
-          <table className="table  table-bordered table-sm " style={{marginTop:"3rem", }}>
+          <table className="table  table-bordered table-sm " style={{marginTop:"3rem"}}>
         <thead  >
           <tr>
             <th scope="col-5"></th>
@@ -37,22 +34,22 @@ export default function Orders() {
   <button style={{fontWeight:"bold",fontSize:20}} class="btn  w-100 th" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 Order_id  </button>
   <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-    <a class="dropdown-item" href="/quotes">Quotes</a>
+    <a class="dropdown-item" href="#">Quote id</a>
   </div>
 </div>
             </th>
             <th scope="col">Date</th>
-            <th scope="col">First Name</th>
-            <th scope="col">Last Name</th>
-            <th scope="col">Agent Name</th>
-            <th scope="col">Total Amount</th>
-            <th scope="col">Status</th>
+            <th scope="col">Quotes</th>
+            <th scope="col">CustomerName</th>
+            <th scope="col">Total</th>
+            <th scope="col">Admin</th>
+            <th scope="col">Quote status</th>
 
-            <th scope="col">View/Edit</th>
+            <th scope="col">Actions</th>
 
 
           </tr>
-          <tr>
+          {/* <tr>
              <th scope="col-5">ID</th>
             <th scope="col"><input type="text" placeholder="search"/></th>
             <th scope="col"><input type="text" placeholder="search"/></th>
@@ -64,7 +61,7 @@ Order_id  </button>
 
 
             <th scope="col"></th>
-          </tr>
+          </tr> */}
          
         </thead>
         <tbody>
@@ -78,8 +75,8 @@ Order_id  </button>
             <td>44</td>
 
             <td>paid</td>
-            <td>
-            <Popup id={"12455"} date={"1448-9-1997"} fn={"test"} ln={"Test"} tamt={44} />
+            <td >
+            <Quotespopup />
             </td>
           </tr>
           <tr>
@@ -95,7 +92,7 @@ Order_id  </button>
             <td></td>
 
             <td>
-            <Popup/>
+            <Quotespopup />
             </td>
           </tr>
           <tr>
@@ -109,7 +106,7 @@ Order_id  </button>
             <td></td>
 
             <td>
-            <Popup/>
+            <Quotespopup />
             </td>
           </tr>
         </tbody>
@@ -120,6 +117,8 @@ Order_id  </button>
       </div>
           </div>
     
+
+    </div>
 
     </div>
   )

@@ -27,8 +27,8 @@ export default function Orders() {
           </div>
 
           <div className="row  h-90 d-flex justify-content-center text-center align-items-center ">
-          <div className="row  h-60" >
-          <table className="table  table-bordered" style={{marginTop:"3rem",marginLeft:"3rem",marginRight:"3rem" }}>
+          <div className="row  h-60 d-flex justify-content-start"  >
+          <table className="table  table-bordered table-sm " style={{marginTop:"3rem", }}>
         <thead  >
           <tr>
             <th scope="col-5"></th>

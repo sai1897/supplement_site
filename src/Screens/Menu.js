@@ -16,9 +16,7 @@ const Menu = () => {
                 class="btn "
                 href="/dashboard"
                 role="button"
-                data-toggle="dropdown"
-                aria-haspopup="true"
-                aria-expanded="false"
+             
               >
                 Dashboard{" "}
               </a>
@@ -42,9 +40,7 @@ const Menu = () => {
                 class="btn  "
                 href="/customers"
                 role="button"
-                data-toggle="dropdown"
-                aria-haspopup="true"
-                aria-expanded="false"
+               
               >
                 Customers{" "}
               </a>
@@ -120,7 +116,7 @@ const Menu = () => {
                 aria-labelledby="dropdownMenuLink"
                 style={{ width: 200 }}
               >
-                <a class="dropdown-item" href="#">
+                <a class="dropdown-item" href="/orders">
                   Order History
                 </a>
                 <a class="dropdown-item" href="#">

@@ -1,12 +1,10 @@
-
-
 import React, { useState } from "react";
 import "/home/cogncise/React/suppliment/src/App.css";
 // import useBearStore from "../Store/Store.js";
 import { Button, Modal, ModalBody, ModalHeader, Row, Col } from "reactstrap";
 
-const Popup = () => {
-//   const st = useBearStore();
+const Popup = ({id,date,fn,tamt}) => {
+  //   const st = useBearStore();
   const [modal, setmodal] = useState(false);
 
   return (
@@ -21,14 +19,13 @@ const Popup = () => {
         // }}
         >
           Add/edit users
-          <Button color="danger" onClick={() => setmodal(!modal)}
-          style={{
-            position:"absolute",
-            right:10,
-           
-          }}
-         
-         
+          <Button
+            color="danger"
+            onClick={() => setmodal(!modal)}
+            style={{
+              position: "absolute",
+              right: 10,
+            }}
           ></Button>
         </ModalHeader>
 
@@ -37,12 +34,12 @@ const Popup = () => {
             <Row>
               <Col lg={12}>
                 <div>
-                  <label htmlFor="role" class="col-lg-3">
+                  {/* <label htmlFor="role" class="col-lg-3">
                     Role
                     <span class="text-danger"> *</span>
-                  </label>
+                  </label> */}
 
-                  <select
+                  {/* <select
                     class="form-select col-lg-9"
                     aria-label="Default select example"
                   >
@@ -50,20 +47,21 @@ const Popup = () => {
                     <option value="agent">Agent</option>
                     <option value="2">Team manager</option>
                     <option value="3">Customer care</option>
-                  </select>
+                  </select> */}
                 </div>
               </Col>
 
               <Col lg={12}>
                 <div>
                   <label htmlFor="id" class="col-lg-3">
-                    ID
+                    Order_ID
                     <span class="text-danger"> *</span>
                   </label>
                   <input
                     type="text"
                     className="form-control"
                     class="col-lg-9"
+                    placeholder={id}
                   ></input>
                 </div>
               </Col>
@@ -71,13 +69,13 @@ const Popup = () => {
               <Col lg={12}>
                 <div>
                   <label htmlFor="reportingTo" class="col-lg-3">
-                    Reporting to
-                    <span class="text-danger"> *</span>
+                    Order_Date <span class="text-danger"> *</span>
                   </label>
                   <input
                     type="text"
                     className="form-control"
                     class="col-lg-9"
+                    placeholder={date}
                   ></input>
                 </div>
               </Col>
@@ -85,8 +83,7 @@ const Popup = () => {
               <Col lg={12}>
                 <div>
                   <label htmlFor="fname" class="col-lg-3">
-                    First name
-                    <span class="text-danger"> *</span>
+                  Customer ID                    <span class="text-danger"> *</span>
                   </label>
                   <input
                     type="text"
@@ -99,12 +96,12 @@ const Popup = () => {
               <Col lg={12}>
                 <div>
                   <label htmlFor="mname" class="col-lg-3">
-                    Middle name
-                  </label>
+                  Customer Name                  </label>
                   <input
                     type="text"
                     className="form-control"
                     class="col-lg-9"
+                    placeholder={fn}
                   ></input>
                 </div>
               </Col>
@@ -112,8 +109,7 @@ const Popup = () => {
               <Col lg={12}>
                 <div>
                   <label htmlFor="lname" class="col-lg-3">
-                    Last name
-                    <span class="text-danger"> *</span>
+                  Customer Phone No                    <span class="text-danger"> *</span>
                   </label>
                   <input
                     type="text"
@@ -126,8 +122,7 @@ const Popup = () => {
               <Col lg={12}>
                 <div>
                   <label htmlFor="phoneno" class="col-lg-3">
-                    Phone No.
-                    <span class="text-danger"> *</span>
+                  Customer Post Code                    <span class="text-danger"> *</span>
                   </label>
                   <input
                     type="text"
@@ -140,8 +135,7 @@ const Popup = () => {
               <Col lg={12}>
                 <div>
                   <label htmlFor="password" class="col-lg-3">
-                    Password
-                    <span class="text-danger"> *</span>
+                  Product Name                    <span class="text-danger"> *</span>
                   </label>
                   <input
                     type="text"
@@ -154,12 +148,46 @@ const Popup = () => {
               <Col lg={12}>
                 <div>
                   <label htmlFor="confirmPassword" class="col-lg-3">
-                    Confirm password
-                    <span class="text-danger"> *</span>
+                  Quantity                    <span class="text-danger"> *</span>
                   </label>
                   <input
                     type="text"
                     className="form-control"
+                    class="col-lg-9"
+                  ></input>
+                </div>
+              </Col><Col lg={12}>
+                <div>
+                  <label htmlFor="confirmPassword" class="col-lg-3">
+                  Sub Total                    <span class="text-danger"> *</span>
+                  </label>
+                  <input
+                    type="text"
+                    className="form-control"
+                    class="col-lg-9"
+                  ></input>
+                </div>
+              </Col><Col lg={12}>
+                <div>
+                  <label htmlFor="confirmPassword" class="col-lg-3">
+                  Shipping                    <span class="text-danger"> *</span>
+                  </label>
+                  <input
+                    type="text"
+                    className="form-control"
+                    class="col-lg-9"
+                  ></input>
+                </div>
+              </Col>
+              <Col lg={12}>
+                <div>
+                  <label htmlFor="confirmPassword" class="col-lg-3">
+                  Total Amount                    <span class="text-danger"> *</span>
+                  </label>
+                  <input
+                    type="text"
+                    className="form-control"
+                    placeholder={tamt}
                     class="col-lg-9"
                   ></input>
                 </div>
@@ -175,26 +203,21 @@ const Popup = () => {
                       marginLeft: "auto",
                       marginRight: "auto",
                       padding: 7,
-                      backgroundColor: "#A4E4B6",
+                      backgroundColor: "#7BBC8A",
+                      color:"#FFFFFF",
                       borderRadius: 10,
-                      marginTop:30,
-                      paddingLeft:20,
-                      paddingRight:20
+                      marginTop: 30,
+                      paddingLeft: 20,
+                      paddingRight: 20,
                     }}
-
-               
                   >
                     Proceed
                   </button>{" "}
                 </div>
 
-
-{/* <div class="d-grid col-2 mx-auto">
+                {/* <div class="d-grid col-2 mx-auto">
   <button class="btn btn-success" type="button">Proceed</button>
 </div> */}
-
-
-
               </Col>
             </Row>
           </form>
@@ -205,10 +228,9 @@ const Popup = () => {
         style={{ backgroundColor: "#0b3629", color: "white" }}
         onClick={() => setmodal(true)}
       >
-Edit/View
+        Edit/View
       </button>
     </div>
   );
 };
 export default Popup;
-

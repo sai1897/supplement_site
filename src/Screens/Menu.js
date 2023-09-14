@@ -172,24 +172,24 @@ const Menu = () => {
           </div>
           <div style={{ marginTop: 10 }}>
             <div class="dropdown show d-flex flex-row p-3 border m-1 ">
-              <img
-                src="./Dashboard/gridicons_refund.png"
+              {/* <img
+                src="./Dashboard/i.png"
                 style={{ width: 35, height: 35 }}
-              />
+              /> */}
+              <img width="35" height="35" src="https://img.icons8.com/external-vectorslab-glyph-vectorslab/53/40C057/external-Task-List-education-and-school-vectorslab-glyph-vectorslab.png" alt="external-Task-List-education-and-school-vectorslab-glyph-vectorslab"/>
+
+
               <h1
                 style={{ width: 250 }}
-                class="btn dropdown-toggle"
+                class="btn"
                 href="#"
                 role="button"
-                id="dropdownMenuLink"
-                data-toggle="dropdown"
-                aria-haspopup="true"
-                aria-expanded="false"
+            
               >
-                Refunds
+                Inventory
               </h1>
 
-              <div
+              {/* <div
                 class="dropdown-menu"
                 aria-labelledby="dropdownMenuLink"
                 style={{ width: 200 }}
@@ -203,7 +203,7 @@ const Menu = () => {
                 <a class="dropdown-item" href="#">
                   Refund Policy
                 </a>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>

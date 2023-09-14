@@ -62,23 +62,23 @@ export default function Orders() {
         <tbody>
           <tr >
             <th scope="row">1</th>
-            <td>Mark</td>
-            <td>Otto</td>
-            <td>@mdo</td>
-            <td></td>
-            <td></td>
-            <td></td>
+            <td>12455</td>
+            <td>1448-9-1997</td>
+            <td>test</td>
+            <td>Test</td>
+            <td>rrrr</td>
+            <td>44</td>
 
-            <td></td>
+            <td>paid</td>
             <td>
-            <Popup/>
+            <Popup id={"12455"} date={"1448-9-1997"} fn={"test"} ln={"Test"} tamt={44} />
             </td>
           </tr>
           <tr>
             <th scope="row">2</th>
-            <td>Jacob</td>
-            <td>Thornton</td>
-            <td>@fat</td>
+            <td>1</td>
+            <td></td>
+            <td></td>
             <td></td>
             <td></td>
             
@@ -92,9 +92,9 @@ export default function Orders() {
           </tr>
           <tr>
             <th scope="row">3</th>
-            <td>Larry</td>
-            <td>the Bird</td>
-            <td>@twitter</td>
+            <td></td>
+            <td></td>
+            <td></td>
             <td></td>
             <td></td>
             <td></td>

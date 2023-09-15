@@ -18,8 +18,7 @@ const Popupnew = ({id,date,fn,tamt}) => {
         //     width:790
         // }}
         >
-          Add/edit users
-          <Button
+Add Customer          <Button
             color="danger"
             onClick={() => setmodal(!modal)}
             style={{

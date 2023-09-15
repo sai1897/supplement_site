@@ -1,134 +1,115 @@
-
 import React from "react";
 import Navbar from "/home/cogncise/React/suppliment/src/Screens/Navbar.js";
 import Menu from "/home/cogncise/React/suppliment/src/Screens/Menu.js";
 import "/home/cogncise/React/suppliment/src/App.css";
+import Popupnew from "./Popupnew";
+import Search from "./Search";
+
 export default function Customers() {
   return (
     <div className="h container-fluid">
       <Navbar />
+
       <div className="row h-100 mt-4">
         <div className=" col-sm-2">
           <Menu />
         </div>
-        <div className="col-sm-10 ">
-          <div className="row h-50  d-flex justify-content-center text-center align-items-center ">
-            <div className="col-sm-6  border-3 d-flex justify-content-center " style={{ width: 713 ,height:500,backgroundColor:'#E2E0E0'}}>
-              <form>
-                <div className="form-group d-flex  flex-row align-items-center text-center m-auto">
-                  <label for="Customer_ID  ">Customer_ID</label>
-                  <input
-                    type=""
-                    class="form-control m-3 "
-                    id="Customer_ID"
-                    aria-describedby="emailHelp"
-                    placeholder="Enter Customer Id"
-                    style={{ width: 333, height: 42 }}
-                  />
-                </div>
-                <div className="form-group d-flex flex-row align-items-center text-center  m-auto">
-                  <label  className="ml-3" for="First Name">
-                    First Name
-                  </label>
-                  <input
-                    type="text"
-                    className="form-control m-3"
-                    id="First_Name"
-                    placeholder="First Name"
-                    style={{ width: 333, height: 42 }}
-                  />
-                </div>
-                <div className="form-group d-flex flex-row align-items-center text-center  m-auto">
-                  <label  className="ml-3" for="Last Name" >
-                    Last Name
-                  </label>
-                  <input
-                    type="text"
-                    class="form-control m-3"
-                    id="Last_Name"
-                    aria-describedby="emailHelp"
-                    placeholder="Last Name"
-                    style={{ width: 333, height: 42 }}
-                  />
-                </div>
-                <div className="form-group d-flex flex-row align-items-center text-center  m-auto">
-                  <label  className="ml-3" for="Phone_No">
-                    Phone No.
-                  </label>
-                  <input
-                    type="text"
-                    class="form-control m-3"
-                    id="Phone_No"
-                    aria-describedby="emailHelp"
-                    placeholder="Phone No."
-                    style={{ width: 333, height: 42 }}
-                  />
-                </div>
-                <div className="form-group d-flex flex-row align-items-center text-center  m-auto">
-                  <label  className="ml-3" for="Postcode" >
-                    Post Code
-                  </label>
-                  <input
-                    type="text"
-                    class="form-control m-3"
-                    id="Postcode"
-                    aria-describedby="emailHelp"
-                    placeholder="PostCode"
-                    style={{ width: 333, height: 42 }}
-                  />
-                </div>
-                <div className="d-flex flex-row  justify-content-center  ">
-                  <div className="mt-4">
-                    <button
-                      type="submit"
-                      className="btn btn-primary"
-                      style={{
-                        width: 110,
-                        background: "#1CE45F",
-                        border: "none",
-                        color: "#000",
-                        fontFamily: "sans-serif",
-                        fontWeight: 600,
-                        fontSize: 24,
-                      }}
-                    >
-                      Search
-                    </button>
-                  </div>
-                  <div className="ml-4 mt-4">
-                    <button
-                      type="submit"
-                      className="btn btn-primary"
-                      style={{
-                        width: 250,
-                        background: "#1CE45F",
-                        border: "none",
-                        color: "#000",
-                        fontFamily: "sans-serif",
-                        fontWeight: 600,
-                        fontSize: 24,
-                      }}
-                    >
-                      Add Customer
-                    </button>
-                  </div>
-                </div>
-              </form>
+        <div className="col-sm-10 h-100 ">
+          <div className="row h-50 ">
+            <div
+              className="container-fluid mt-2 pb-2 "
+              style={{ backgroundColor: "#E2E0E0", width: 500, height: 417 }}
+            >
+              {/* <div className="row d-flex justify-content-center align-items-center text-center mb-3">
+                <h5 className="bg-info mt-4" >Customer ID </h5>
+                <input
+                  class="form-control  w-50 mt-4"
+                  type="text"
+                  placeholder="Default input"
+                  style={{marginLeft:48}}
+                 
+                />
+              </div> */}
+                <div className="row d-flex justify-content-center align-items-center text-center">
+                <h5  className="m-4">CustomerId</h5>
+                <input
+                  class="form-control  inputc  ml-3 w-50"
+                  type="text"
+                  placeholder="Default input"
+                />
+              </div>
+              <div className="row d-flex justify-content-center align-items-center text-center">
+                <h5  className="m-4">First Name</h5>
+                <input
+                  class="form-control  inputc  ml-3 w-50"
+                  type="text"
+                  placeholder="Default input"
+                />
+              </div>
+              <div className="row d-flex justify-content-center align-items-center text-center">
+                <h5  className="m-4">Last Name</h5>
+                <input
+                  class="form-control ml-3 w-50"
+                  type="text"
+                  placeholder="Default input"
+                />
+              </div>
+              <div className="row d-flex justify-content-center align-items-center text-center">
+                <h5  className="m-4">Phone No.</h5>
+                <input
+                  class="form-control ml-3 w-50"
+                  type="text"
+                  placeholder="Default input"
+                />
+              </div>
+              <div className="row d-flex justify-content-center align-items-center text-center">
+                <h5  className="m-4">Post Code</h5>
+                <input
+                  class="form-control ml-3 w-50"
+                  type="text"
+                  placeholder="Default input"
+                />
+              </div>
+
+              <div className="row d-flex justify-content-center align-items-center ">
+                <button
+                  type="button"
+                  class="btn  m-1 mr-4"
+                  style={{ backgroundColor: "#1CE45F", color: "white" }}
+                >
+                  Search
+                </button>
+
+                <Popupnew />
+              </div>
             </div>
           </div>
-
-          <div className="row  h-50 d-flex justify-content-center text-center align-items-center ">
-          <div className="row  h-60">
-          <table className="table  table-bordered" style={{marginTop:"3rem",marginLeft:"3rem",marginRight:"3rem" }}>
+          <div className="row h-50 ">
+            <div className="row  h-100 d-flex justify-content-center text-center ">
+          <div className="row  h-60 justify-content-center text-center" >
+          <table className="table  table-bordered table-sm " style={{marginTop:"3rem", }}>
         <thead  >
           <tr>
             <th scope="col-5"></th>
+            <th scope="col">
+            <div class="dropdown">
+  <button style={{fontWeight:"bold",fontSize:20}} class="btn  w-100 th" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+Order_id  </button>
+  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+    <a class="dropdown-item" href="/quotes">Quotes</a>
+  </div>
+</div>
+            </th>
+            <th scope="col">Customer ID</th>
             <th scope="col">Name</th>
-            <th scope="col">Username</th>
-            <th scope="col">Phone no.</th>
-            <th scope="col">Role</th>
-            <th scope="col">Reporting To</th>
-            <th scope="col">Action.</th>
+            <th scope="col">Phone No.</th>
+            <th scope="col">Address</th>
+            <th scope="col">Post Code</th>
+            <th scope="col">Date</th>
+
+            <th scope="col" style={{width:100}}>Agent Name</th>
+
+
           </tr>
           <tr>
              <th scope="col-5">ID</th>
@@ -137,6 +118,12 @@ export default function Customers() {
             <th scope="col"><input type="text" placeholder="search"/></th>
             <th scope="col"><input type="text" placeholder="search"/></th>
             <th scope="col"><input type="text" placeholder="search"/></th>
+            <th scope="col"><input type="text" placeholder="search"/></th>
+            <th scope="col"><input type="text" placeholder="search"/></th>
+            <th scope="col"><input type="text"  style={{width:100}} placeholder="search"/></th>
+
+
+
             <th scope="col"></th>
           </tr>
          
@@ -144,46 +131,53 @@ export default function Customers() {
         <tbody>
           <tr >
             <th scope="row">1</th>
-            <td>Mark</td>
-            <td>Otto</td>
-            <td>@mdo</td>
-            <td></td>
-            <td></td>
+            <td>12455</td>
+            <td>1448-9-1997</td>
+            <td>test</td>
+            <td>Test</td>
+            <td>rrrr</td>
+            <td>44</td>
+
+            <td>paid</td>
             <td>
-              <button type="button" class="btn btn-primary " >Edit</button>
-              <button type="button" class="btn btn-danger ">De Activate</button>
             </td>
           </tr>
           <tr>
             <th scope="row">2</th>
-            <td>Jacob</td>
-            <td>Thornton</td>
-            <td>@fat</td>
+            <td>1</td>
             <td></td>
             <td></td>
+            <td></td>
+            <td></td>
+            
+            <td></td>
+
+            <td></td>
+
             <td>
-            <button type="button" class="btn btn-primary">Edit</button>
-              <button type="button" class="btn btn-danger">De Activate</button>
             </td>
           </tr>
           <tr>
             <th scope="row">3</th>
-            <td>Larry</td>
-            <td>the Bird</td>
-            <td>@twitter</td>
             <td></td>
             <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+
             <td>
-            <button type="button" class="btn btn-primary">Edit</button>
-              <button type="button" class="btn btn-danger">De Activate</button>
             </td>
           </tr>
         </tbody>
       </table>
           </div>
           </div>
+
+            </div>
+          </div>
         </div>
       </div>
-    </div>
   );
 }

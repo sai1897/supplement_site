@@ -10,18 +10,19 @@ import Payment from './Screens/Payment';
 import Navbar from './Screens/Navbar';
 
 import Quotes from './Dashboard/Orders/Quotes';
-
+import Refund from './Dashboard/Orders/Refund';
 
 import Customers from "./Dashboard/Customers/Customers";
 import Dash  from "./Dashboard/Dash";
 
 import Orders from "/home/cogncise/React/suppliment/src/Dashboard/Orders/Orders.js";
-import Refund from '/home/cogncise/React/suppliment/src/Dashboard/Orders/Refund.js';
-import Upcomingorders from '/home/cogncise/React/suppliment/src/Dashboard/Orders/Upcomingorders.js';
 
+import Upcomming from './Dashboard/Orders/Upcoming';
 
 import Reports from "./Dashboard/Reports";
 import Umangement  from "./Dashboard/Umanagement"
+
+import Search from './Dashboard/Customers/Search';
 
 
 function App() {
@@ -43,12 +44,20 @@ function App() {
 
 
       <Route path="customers" element={<Customers />} />
+      <Route path="search" element={<Search />} />
+
+      
       <Route path="dashboard" element={<Dash />} />
 
 
       <Route path="orders" element={<Orders />} />
+      <Route path="upcoming" element={<Upcomming />} />
       <Route path="refunds" element={<Refund />} />
-      <Route path="upcoming" element={<Upcomingorders/>}/>
+
+
+
+
+
 
 
       <Route path="reports" element={<Reports />} />

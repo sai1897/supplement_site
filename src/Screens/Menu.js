@@ -64,18 +64,18 @@ const Menu = () => {
 
               <a
                 style={{ width: 250 }}
-                class="btn  dropdown-toggle"
+                class="btn  "
                 href="#"
                 role="button"
-                id="dropdownMenuLink"
-                data-toggle="dropdown"
-                aria-haspopup="true"
-                aria-expanded="false"
+                // id="dropdownMenuLink"
+                // data-toggle="dropdown"
+                // aria-haspopup="true"
+                // aria-expanded="false"
               >
                 User Management
               </a>
 
-              <div
+              {/* <div
                 class="dropdown-menu"
                 aria-labelledby="dropdownMenuLink"
                 style={{ width: 200 }}
@@ -89,7 +89,7 @@ const Menu = () => {
                 <a class="dropdown-item" href="#">
                   Agent History
                 </a>
-              </div>
+              </div> */}
             </div>
           </div>
           <div style={{ marginTop: 10 }}>
@@ -119,11 +119,12 @@ const Menu = () => {
                 <a class="dropdown-item" href="/orders">
                   Order History
                 </a>
-                <a class="dropdown-item" href="#">
-                  To be Dispatch
-                </a>
-                <a class="dropdown-item" href="#">
+              
+                <a class="dropdown-item" href="/upcoming">
                   Upcomming Orders
+                </a>
+                <a class="dropdown-item" href="/refunds">
+                  Refund
                 </a>
               </div>
             </div>

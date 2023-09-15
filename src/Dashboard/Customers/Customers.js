@@ -4,8 +4,16 @@ import Menu from "/home/cogncise/React/suppliment/src/Screens/Menu.js";
 import "/home/cogncise/React/suppliment/src/App.css";
 import Popupnew from "./Popupnew";
 import Search from "./Search";
+import { useNavigate } from "react-router-dom";
+
 
 export default function Customers() {
+  const navigate = useNavigate();
+
+  const Navigateone=()=>{
+    navigate("/search")
+
+  }
   return (
     <div className="h container-fluid">
       <Navbar />
@@ -76,6 +84,7 @@ export default function Customers() {
                   type="button"
                   class="btn  m-1 mr-4"
                   style={{ backgroundColor: "#1CE45F", color: "white" }}
+                  onClick={()=>{Navigateone()}}
                 >
                   Search
                 </button>

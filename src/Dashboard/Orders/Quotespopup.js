@@ -80,7 +80,7 @@ Quote Details          <Button
         onClick={() => setmodal(true)}
       >
         <img width="20" height="20" src="https://img.icons8.com/ios-filled/50/40C057/search--v1.png" />
-        View
+        View/Edit
       </button>
     </div>
 

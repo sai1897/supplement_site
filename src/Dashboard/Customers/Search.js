@@ -183,11 +183,18 @@ const Search = () => {
 </table>
 
             </div>
-            <div  className="row h-50 bg-secondary d-flex justify-content-center align-items-center">
             <div>Customer Notes</div>
 
-            <table class="table">
+            <div className="row h-50 d-flex justify-content-center align-items-center ">
+
+            <div  className="row bg-secondary d-flex justify-content-center align-items-center  " style={{height:400,width:600}}>
+
+
+            <table class="table" style={{width:400}} >
+            
+
   <thead>
+
     <tr>
       <th scope="col">#</th>
       <th scope="col">First</th>
@@ -212,15 +219,23 @@ const Search = () => {
       <th scope="row">3</th>
       <td>Larry</td>
       <td>the Bird</td>
-      <td>@twitter</td>
+      <td>@twitter</td> 
     </tr>
   </tbody>
 </table>
+<div className="d-flex flex-row w-100 align-items-center justify-content-center">
+<input style={{backgroundColor:"#FFFFFF",width:300}}class="form-control mr-3" type="text" placeholder="Add Note Here."/>
+<button  style={{backgroundColor:"#1CE45F"}} type="button" class="btn  ">Add Note</button>
+
+</div>
+
 
 
                 
             </div>
-
+            </div>
+            
+         
           </div>
         </div>
       </div>

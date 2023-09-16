@@ -73,7 +73,10 @@ font-family: 'Montserrat';
 .p {
   background: linear-gradient(180deg, #A4E4B6 70%, #ffffff 30%);
 }
+.table2{
+  background-color:"white";
 
+}
 .table{
   box-shadow: 5px 5px  5px #888888;
   

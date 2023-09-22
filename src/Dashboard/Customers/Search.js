@@ -32,7 +32,7 @@ const Search = () => {
                  
                 />
               </div> */}
-              <div className="row d-flex justify-content-center align-items-center text-center">
+              {/* <div className="row d-flex justify-content-center align-items-center text-center">
                 <h5 className="m-4">CustomerId</h5>
                 <input
                   class="form-control  inputc  ml-3 w-50"
@@ -134,7 +134,92 @@ const Search = () => {
                   class="form-control ml-3 w-50"
                   type="text"
                   placeholder="Default input"
-                />
+                /5
+              </div> */}
+
+              <div className="row">
+                <div className="col-5  ">
+                  <div className="col w-100  d-flex justify-content-center align-items-center  text-center bg-3  m-2" style={{height:40}}>CustomerId:</div>
+                  <div className="col w-100  d-flex justify-content-center align-items-center   text-center m-2" style={{height:40}}>First Name:</div>
+                  <div className="col w-100 d-flex justify-content-center align-items-center  text-center m-2" style={{height:40}}>Middle Name:</div>
+                  <div className="col w-100 d-flex justify-content-center align-items-center  text-center m-2" style={{height:40}}>Last Name:</div>
+                  <div className="col w-100 d-flex justify-content-center align-items-center  text-center m-2" style={{height:40}}>Email:</div>
+                  <div className="col w-100 d-flex justify-content-center align-items-center  text-center m-2" style={{height:40}}>Phone No:</div>
+                  <div className="col w-100 d-flex justify-content-center align-items-center  text-center m-2" style={{height:40}}>Landline No:</div>
+
+                  <div className="col w-100 d-flex justify-content-center align-items-center  text-center m-2" style={{height:40}}>Address 1:</div>
+                  <div className="col w-100 d-flex justify-content-center align-items-center  text-center m-2" style={{height:40}}>Address 2:</div>
+                  <div className="col w-100 d-flex justify-content-center align-items-center  text-center m-2" style={{height:40}}>Town/City:</div>
+                  <div className="col w-100 d-flex justify-content-center align-items-center  text-center m-2" style={{height:40}}>Country:</div>
+                  <div className="col w-100 d-flex justify-content-center align-items-center  text-center m-2" style={{height:40}}>Post Code:</div>
+                  <div className="col w-100 d-flex justify-content-center align-items-center  text-center m-2" style={{height:40}}>Remark:</div>
+                </div>
+                <div className="col-7">
+                  <div className="col w-100 d-flex justify-content-center align-items-center m-2  "  style={{width:400,height:40}}>
+                  <input class="form-control " type="text"/>
+                  </div>
+                  <div className="col w-100 d-flex justify-content-center align-items-center m-2"  style={{width:400,height:40}}>
+                  <input class="form-control" type="text" />
+
+
+                  </div>
+                  <div className="col w-100 d-flex justify-content-center align-items-center m-2"  style={{width:400,height:40}}>
+                  <input class="form-control" type="text" />
+
+
+
+                  </div>
+                  <div className="col w-100 d-flex justify-content-center align-items-center m-2"  style={{width:400,height:40}}>
+                  <input class="form-control" type="text"  />
+
+
+                  </div>
+                  <div className="col w-100 d-flex justify-content-center align-items-center m-2"  style={{width:400,height:40}}>
+                  <input class="form-control" type="text" />
+
+
+                  </div>
+                  <div className="col w-100 d-flex justify-content-center align-items-center m-2"  style={{width:400,height:40}}>
+                  <input class="form-control" type="text"/>
+
+                  </div>
+                  <div className="col w-100 d-flex justify-content-center align-items-center m-2"  style={{width:400,height:40}}>
+                  <input class="form-control" type="text" />
+
+
+                  </div>
+                  <div className="col w-100 d-flex justify-content-center align-items-center m-2"  style={{width:400,height:40}}>
+                  <input class="form-control" type="text" />
+
+
+                  </div>
+                  <div className="col w-100 d-flex justify-content-center align-items-center m-2"  style={{width:400,height:40}}>
+                  <input class="form-control" type="text" />
+
+                    
+
+                  </div>
+                  <div className="col w-100 d-flex justify-content-center align-items-center m-2"  style={{width:400,height:40}}>
+                  <input class="form-control" type="text" />
+
+
+                  </div>
+                  <div className="col w-100 d-flex justify-content-center align-items-center m-2"  style={{width:400,height:40}}>
+                  <input class="form-control" type="text"  />
+
+
+                  </div>
+                  <div className="col w-100 d-flex justify-content-center align-items-center m-2"  style={{width:400,height:40}}>
+                  <input class="form-control" type="text" />
+
+
+                  </div>
+                  <div className="col w-100 d-flex justify-content-center align-items-center m-2"  style={{width:400,height:40}}>
+                  <input class="form-control" type="text" />
+
+
+                  </div>
+                </div>
               </div>
               <div class="form-check" style={{ marginLeft: 59 }}>
                 <input
@@ -282,17 +367,25 @@ const Search = () => {
                   </button>
                 </div>
               </div>
-              
-           <div className="w-100" style={{ backgroundColor: "#D9D9D9",marginTop:30,height:200}}>
-            <div
-              style={{
-                marginTop: 20,
-              }}
-            >
-              Enter Daily Edited Activity()Log: To be reflected in the activity log of Logs(Super Admin)
+
+              <div
+                className="w-100"
+                style={{
+                  backgroundColor: "#D9D9D9",
+                  marginTop: 30,
+                  height: 200,
+                }}
+              >
+                <div
+                  style={{
+                    marginTop: 20,
+                  }}
+                >
+                  Enter Daily Edited Activity()Log: To be reflected in the
+                  activity log of Logs(Super Admin)
+                </div>
+              </div>
             </div>
-            </div>
-          </div>
           </div>
         </div>
       </div>

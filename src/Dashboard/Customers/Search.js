@@ -306,7 +306,7 @@ const Search = () => {
                 </tbody>
               </table>
             </div>
-            <div style={{ marginTop: 20, fontWeight: 400, fontSize: 32 }}>
+            <div style={{ marginTop: 40, fontWeight: 400, fontSize: 32 }}>
               Customer Notes
             </div>
 

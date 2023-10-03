@@ -3,6 +3,9 @@ import Navbar from "/home/cogncise/React/suppliment/src/Screens/Navbar.js";
 import Menu from "/home/cogncise/React/suppliment/src/Screens/Menu.js";
 import "/home/cogncise/React/suppliment/src/App.css";
 import Popupnew from "./Popupnew";
+import Addnote from "../Customers/Addnote"
+
+import Addorder from "./Addorder";
 const Search = () => {
   return (
     <div>
@@ -257,12 +260,11 @@ const Search = () => {
             <div className="d-flex flex-row w-100 align-items-center justify-content-center">
               <div className="d-flex justify-content-end  w-100">
                 <button
-                  style={{ backgroundColor: "#1CE45F" }}
+                  style={{ backgroundColor: "#1CE45F" ,color:"white"}}
                   type="button"
                   class="btn mr-3 mb-3"
                 >
-                  Add Note
-                </button>
+<Addorder/>               </button>
               </div>
             </div>
 
@@ -363,8 +365,8 @@ const Search = () => {
                     type="button"
                     class="btn  "
                   >
-                    Add Note
-                  </button>
+
+<Addnote/>                  </button>
                 </div>
               </div>
 

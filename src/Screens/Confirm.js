@@ -1,6 +1,44 @@
-import React from "react";
+import React, { useState } from "react";
 import "../App.css"
+import { useNavigate } from "react-router-dom";
+
+
+
 export default function () {
+  const navigate = useNavigate();
+
+  const [pass1,setPass1]=useState("")
+  const [passc2,setPassc2]=useState("")
+
+const Confirm=()=>{
+
+  const info = 
+  {
+    email: localStorage.getItem("username"),
+    otp: localStorage.getItem("otp"),
+    new_password:pass1,
+    confirm_password: passc2
+}
+
+
+fetch(
+  "https://meven.pythonanywhere.com/api/user/confirm_password/"
+  
+  , {
+  method: "POST",
+  headers: {
+    "Content-Type": "application/json",
+  },
+  body: JSON.stringify(info),
+}).then((response) => console.log(response))
+
+.then(navigate("/")) 
+};
+
+
+
+
+
   return (
     <div>
       <div>
@@ -26,7 +64,7 @@ export default function () {
               </div>
               <div className=" d-flex col-sm-3 justify-content-center">
               <div class="mb-3">
-    <input type="password" class="form-control" id="exampleInputPassword1" style={{backgroundColor:"#D9D9D9"}}/>
+    <input type="password" onChange={(e)=>setPass1(e.target.value)} class="form-control" id="exampleInputPassword1" style={{backgroundColor:"#D9D9D9"}}/>
   </div>
               </div>
             </div>
@@ -36,14 +74,15 @@ export default function () {
               </div>
               <div className="d-flex col-sm-3 justify-content-center">
               <div class="mb-3">
-    <input type="password" class="form-control" id="exampleInputPassword1" style={{backgroundColor:"#D9D9D9"}}/>
+    <input type="password"  onChange={(e)=>setPassc2(e.target.value)}  class="form-control" id="exampleInputPassword1" style={{backgroundColor:"#D9D9D9"}}/>
   </div>
 
               </div>
             </div>
             <div className="row d-flex justify-content-center m-4 ">
               <button
-                type="button "
+              onClick={()=>Confirm()}
+                type="button"
                 className="btn shadow"
                 style={{
                   width: 200,

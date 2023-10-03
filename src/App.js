@@ -11,7 +11,7 @@ import Navbar from './Screens/Navbar';
 
 import Quotes from './Dashboard/Orders/Quotes';
 import Refund from './Dashboard/Orders/Refund';
-
+import Addpopup from './Screens/Addpopup';
 import Customers from "./Dashboard/Customers/Customers";
 import Dash  from "./Dashboard/Dash";
 
@@ -20,10 +20,15 @@ import Orders from "/home/cogncise/React/suppliment/src/Dashboard/Orders/Orders.
 import Upcomming from './Dashboard/Orders/Upcoming';
 
 import Reports from "./Dashboard/Reports";
-import Umangement  from "./Dashboard/Umanagement"
 
 import Search from './Dashboard/Customers/Search';
 
+import Addnote from './Dashboard/Customers/Addnote';
+import Addorder from './Dashboard/Customers/Addorder';
+
+import Umanagement from './Dashboard/Usermanagement/Umanagement';
+// import Editpopup from './Dashboard/Inventory/Editpopup';
+//  import viewproduct from './Dashboard/Inventory/Viewproduct';
 
 function App() {
   return (
@@ -45,6 +50,8 @@ function App() {
 
       <Route path="customers" element={<Customers />} />
       <Route path="search" element={<Search />} />
+      {/* <Route path="editpop" element={<Editpopup />} /> */}
+
 
       
       <Route path="dashboard" element={<Dash />} />
@@ -54,6 +61,10 @@ function App() {
       <Route path="upcoming" element={<Upcomming />} />
       <Route path="refunds" element={<Refund />} />
 
+      <Route path="product" element={<viewproduct />} />
+
+
+      <Route path="manage" element={< Umanagement/>} />
 
 
 
@@ -61,9 +72,16 @@ function App() {
 
 
       <Route path="reports" element={<Reports />} />
-      <Route path="user" element={<Umangement />} />
 
       <Route path="quotes" element={<Quotes />} />
+
+      <Route path="note" element={<Addnote />} />
+      <Route path="addorder" element={<Addorder />} />
+
+      <Route path="addpop" element={<Addpopup />} />
+
+
+
 
 
 

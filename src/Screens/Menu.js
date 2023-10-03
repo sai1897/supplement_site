@@ -65,7 +65,7 @@ const Menu = () => {
               <a
                 style={{ width: 250 }}
                 class="btn  "
-                href="#"
+                href="/manage"
                 role="button"
                 // id="dropdownMenuLink"
                 // data-toggle="dropdown"
